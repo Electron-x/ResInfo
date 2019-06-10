@@ -1,0 +1,884 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GER_RESINFO1 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Batterie"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Erweitert...",IDC_ADV_BAT,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Zurücksetzen",IDC_RESET,67,71,60,14
+    LTEXT           "Batterieladestatus:",IDC_STATIC,3,4,70,10
+    RTEXT           "",IDC_BAT,77,4,50,10
+    CONTROL         "Progress1",IDC_PROGRESS_BAT,"msctls_progress32",
+                    WS_BORDER,3,14,124,8
+    CTEXT           "",IDC_BAT_STATUS,3,26,124,10
+    LTEXT           "Betrieb:",IDC_TEXT_WORKING,7,43,32,10
+    RTEXT           "",IDC_TIME_WORKING,43,43,80,10
+    LTEXT           "Standby:",IDC_TEXT_SUSPEND,7,54,32,10
+    RTEXT           "",IDC_TIME_SUSPEND,41,54,82,10
+    GROUPBOX        "",IDC_STATIC,3,35,124,31
+END
+
+IDD_GER_RESINFO2 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Speicher"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Datenbanken",IDC_DATABASE,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Große Dateien",IDC_SEARCH,67,71,60,14
+    LTEXT           "Programmspeicher:",IDC_STATIC,3,4,80,10
+    RTEXT           "",IDC_MEM,87,4,40,10
+    CONTROL         "Progress1",IDC_PROGRESS_MEM,"msctls_progress32",
+                    WS_BORDER,3,14,124,8
+    CONTROL         "",IDC_FILLED_MEM,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,
+                    3,24,62,10
+    RTEXT           "",IDC_FREE_MEM,73,24,54,10
+    LTEXT           "Datenspeicher:",IDC_STATIC,3,38,80,10
+    RTEXT           "",IDC_OBJ,87,38,40,10
+    CONTROL         "Progress1",IDC_PROGRESS_OBJ,"msctls_progress32",
+                    WS_BORDER,3,48,124,8
+    CONTROL         "",IDC_FILLED_OBJ,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,
+                    3,58,62,10
+    RTEXT           "",IDC_FREE_OBJ,73,58,54,10
+END
+
+IDD_GER_RESINFO3 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Datenträger"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Weitere",IDC_NEXT,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "PC-Karten...",IDC_PC_CARDS,67,71,60,14
+    LTEXT           "",IDC_DIR_CARD1,3,4,80,10
+    RTEXT           "",IDC_PERCENT_CARD1,87,4,40,10
+    CONTROL         "Progress1",IDC_PROGRESS_CARD1,"msctls_progress32",
+                    WS_BORDER,3,14,124,8
+    CONTROL         "",IDC_FILLED_CARD1,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,3,24,62,10
+    RTEXT           "",IDC_FREE_CARD1,73,24,54,10
+    LTEXT           "",IDC_DIR_CARD2,3,38,80,10
+    RTEXT           "",IDC_PERCENT_CARD2,87,38,40,10
+    CONTROL         "Progress1",IDC_PROGRESS_CARD2,"msctls_progress32",
+                    WS_BORDER,3,48,124,8
+    CONTROL         "",IDC_FILLED_CARD2,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,3,58,62,10
+    RTEXT           "",IDC_FREE_CARD2,73,58,54,10
+END
+
+IDD_GER_RESINFO4 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Tasks"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Prozesse",IDC_TASKS,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Task beenden",IDC_END_TASK,67,71,60,14
+    LISTBOX         IDC_TASKLIST,4,4,123,53,WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+    CTEXT           "",IDC_TASKINFO,4,58,123,10
+END
+
+IDD_GER_RESINFO5 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "System"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "IP-Adresse...",IDC_NETWORK,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Warmstart...",IDC_REBOOT,67,71,60,14
+    CTEXT           "",IDC_OEMINFO,3,4,124,10
+    CTEXT           "",IDC_PLATFORM,3,15,124,10
+    CTEXT           "",IDC_OSVERSION,3,26,124,10
+    CTEXT           "",IDC_MEMORY,3,37,124,10
+    CTEXT           "",IDC_PROCESSOR,3,48,124,10
+    CTEXT           "",IDC_DISPLAY,3,59,124,10
+END
+
+IDD_GER_RESINFO6 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Einstellungen"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Anwenden",IDC_APPLY,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Symbolfarbe...",IDC_COLOR,67,71,60,14
+    CONTROL         "Laufzeiten autom. zurücksetzen",IDC_OPT_RESET,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,4,3,123,10
+    CONTROL         "Batteriesymbol anzeigen",IDC_OPT_BATICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,14,123,10
+    CONTROL         "Speichersymbol anzeigen",IDC_OPT_MEMICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,25,123,10
+    CONTROL         "Prozessorsymbol anzeigen",IDC_OPT_CPUICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,36,123,10
+    CONTROL         "Statische Symbole verwenden",IDC_OPT_STATICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,47,123,10
+    CONTROL         "Alternative Symbolfüllfarbe",IDC_OPT_COLOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,58,123,10
+END
+
+IDD_GER_RESINFO7 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Info"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Homepage",IDC_HOMEPAGE,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "FAQ",IDC_FAQ,67,71,60,14
+    CTEXT           "",IDC_APPNAME,3,4,124,10
+    CTEXT           "",IDC_VERSION,3,15,124,10
+    CTEXT           "",IDC_RELEASE,3,26,124,10
+    CTEXT           "",IDC_COPYRIGHT,3,37,124,10
+    CTEXT           "",IDC_AUTHOR,3,48,124,10
+    CTEXT           "",IDC_URL,3,59,124,10
+END
+
+IDD_GER_RESINFO8 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Prozessor"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Pause",IDC_PAUSE,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Anwenden",IDC_ACCEPT,67,71,60,14
+    CONTROL         "",IDC_HISTORY,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,8,3,115,28
+    CTEXT           "0,5 s",IDC_STATIC,7,47,20,10
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_GROUP | WS_TABSTOP,31,44,68,20
+    CTEXT           "3,0 s",IDC_STATIC,103,47,20,10
+    GROUPBOX        "Aktualisierungsintervall",IDC_STATIC,3,33,124,34,
+                    WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GER_RESINFO1, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GER_RESINFO2, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GER_RESINFO3, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GER_RESINFO4, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GER_RESINFO5, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GER_RESINFO6, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GER_RESINFO7, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_GER_RESINFO8, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_RESINFO             ICON    DISCARDABLE     "resinfo.ico"
+IDI_RESINFO1            ICON    DISCARDABLE     "batinfo.ico"
+IDI_RESINFO2            ICON    DISCARDABLE     "meminfo.ico"
+IDI_RESINFO3            ICON    DISCARDABLE     "cardinfo.ico"
+IDI_RESINFO4            ICON    DISCARDABLE     "taskinfo.ico"
+IDI_RESINFO5            ICON    DISCARDABLE     "sysinfo.ico"
+IDI_RESINFO6            ICON    DISCARDABLE     "settings.ico"
+IDI_RESINFO7            ICON    DISCARDABLE     "appinfo.ico"
+IDI_RESINFO8            ICON    DISCARDABLE     "cpuinfo.ico"
+IDI_BAT000C             ICON    DISCARDABLE     "Icons\\Bat000C.ico"
+IDI_BAT010C             ICON    DISCARDABLE     "Icons\\Bat010C.ico"
+IDI_BAT020C             ICON    DISCARDABLE     "Icons\\Bat020C.ico"
+IDI_BAT030C             ICON    DISCARDABLE     "Icons\\Bat030C.ico"
+IDI_BAT040C             ICON    DISCARDABLE     "Icons\\Bat040C.ico"
+IDI_BAT050C             ICON    DISCARDABLE     "Icons\\Bat050C.ico"
+IDI_BAT060C             ICON    DISCARDABLE     "Icons\\Bat060C.ico"
+IDI_BAT070C             ICON    DISCARDABLE     "Icons\\Bat070C.ico"
+IDI_BAT080C             ICON    DISCARDABLE     "Icons\\Bat080C.ico"
+IDI_BAT090C             ICON    DISCARDABLE     "Icons\\Bat090C.ico"
+IDI_BAT100C             ICON    DISCARDABLE     "Icons\\Bat100C.ico"
+IDI_BATUNKNC            ICON    DISCARDABLE     "Icons\\BatUnknC.ico"
+IDI_BATLOADC            ICON    DISCARDABLE     "Icons\\BatLoadC.ico"
+IDI_BATNONEC            ICON    DISCARDABLE     "Icons\\BatNoneC.ico"
+IDI_MEM000C             ICON    DISCARDABLE     "Icons\\Mem000C.ico"
+IDI_MEM010C             ICON    DISCARDABLE     "Icons\\Mem010C.ico"
+IDI_MEM020C             ICON    DISCARDABLE     "Icons\\Mem020C.ico"
+IDI_MEM030C             ICON    DISCARDABLE     "Icons\\Mem030C.ico"
+IDI_MEM040C             ICON    DISCARDABLE     "Icons\\Mem040C.ico"
+IDI_MEM050C             ICON    DISCARDABLE     "Icons\\Mem050C.ico"
+IDI_MEM060C             ICON    DISCARDABLE     "Icons\\Mem060C.ico"
+IDI_MEM070C             ICON    DISCARDABLE     "Icons\\Mem070C.ico"
+IDI_MEM080C             ICON    DISCARDABLE     "Icons\\Mem080C.ico"
+IDI_MEM090C             ICON    DISCARDABLE     "Icons\\Mem090C.ico"
+IDI_MEM100C             ICON    DISCARDABLE     "Icons\\Mem100C.ico"
+IDI_MEMUNKNC            ICON    DISCARDABLE     "Icons\\MemUnknC.ico"
+IDI_BAT000B             ICON    DISCARDABLE     "Icons\\Bat000B.ico"
+IDI_BAT010B             ICON    DISCARDABLE     "Icons\\Bat010B.ico"
+IDI_BAT020B             ICON    DISCARDABLE     "Icons\\Bat020B.ico"
+IDI_BAT030B             ICON    DISCARDABLE     "Icons\\Bat030B.ico"
+IDI_BAT040B             ICON    DISCARDABLE     "Icons\\Bat040B.ico"
+IDI_BAT050B             ICON    DISCARDABLE     "Icons\\Bat050B.ico"
+IDI_BAT060B             ICON    DISCARDABLE     "Icons\\Bat060B.ico"
+IDI_BAT070B             ICON    DISCARDABLE     "Icons\\Bat070B.ico"
+IDI_BAT080B             ICON    DISCARDABLE     "Icons\\Bat080B.ico"
+IDI_BAT090B             ICON    DISCARDABLE     "Icons\\Bat090B.ico"
+IDI_BAT100B             ICON    DISCARDABLE     "Icons\\Bat100B.ico"
+IDI_BATUNKNB            ICON    DISCARDABLE     "Icons\\BatUnknB.ico"
+IDI_BATLOADB            ICON    DISCARDABLE     "Icons\\BatLoadB.ico"
+IDI_BATNONEB            ICON    DISCARDABLE     "Icons\\BatNoneB.ico"
+IDI_MEM000B             ICON    DISCARDABLE     "Icons\\Mem000B.ico"
+IDI_MEM010B             ICON    DISCARDABLE     "Icons\\Mem010B.ico"
+IDI_MEM020B             ICON    DISCARDABLE     "Icons\\Mem020B.ico"
+IDI_MEM030B             ICON    DISCARDABLE     "Icons\\Mem030B.ico"
+IDI_MEM040B             ICON    DISCARDABLE     "Icons\\Mem040B.ico"
+IDI_MEM050B             ICON    DISCARDABLE     "Icons\\Mem050B.ico"
+IDI_MEM060B             ICON    DISCARDABLE     "Icons\\Mem060B.ico"
+IDI_MEM070B             ICON    DISCARDABLE     "Icons\\Mem070B.ico"
+IDI_MEM080B             ICON    DISCARDABLE     "Icons\\Mem080B.ico"
+IDI_MEM090B             ICON    DISCARDABLE     "Icons\\Mem090B.ico"
+IDI_MEM100B             ICON    DISCARDABLE     "Icons\\Mem100B.ico"
+IDI_MEMUNKNB            ICON    DISCARDABLE     "Icons\\MemUnknB.ico"
+IDI_CPU000C             ICON    DISCARDABLE     "Icons\\Cpu000C.ico"
+IDI_CPU001C             ICON    DISCARDABLE     "Icons\\Cpu001C.ico"
+IDI_CPU002C             ICON    DISCARDABLE     "Icons\\Cpu002C.ico"
+IDI_CPU003C             ICON    DISCARDABLE     "Icons\\Cpu003C.ico"
+IDI_CPU004C             ICON    DISCARDABLE     "Icons\\Cpu004C.ico"
+IDI_CPU005C             ICON    DISCARDABLE     "Icons\\Cpu005C.ico"
+IDI_CPU006C             ICON    DISCARDABLE     "Icons\\Cpu006C.ico"
+IDI_CPU007C             ICON    DISCARDABLE     "Icons\\Cpu007C.ico"
+IDI_CPU008C             ICON    DISCARDABLE     "Icons\\Cpu008C.ico"
+IDI_CPU009C             ICON    DISCARDABLE     "Icons\\Cpu009C.ico"
+IDI_CPU010C             ICON    DISCARDABLE     "Icons\\Cpu010C.ico"
+IDI_CPU011C             ICON    DISCARDABLE     "Icons\\Cpu011C.ico"
+IDI_CPUUNKNC            ICON    DISCARDABLE     "Icons\\CpuUnknC.ico"
+IDI_CPU000B             ICON    DISCARDABLE     "Icons\\Cpu000B.ico"
+IDI_CPU001B             ICON    DISCARDABLE     "Icons\\Cpu001B.ico"
+IDI_CPU002B             ICON    DISCARDABLE     "Icons\\Cpu002B.ico"
+IDI_CPU003B             ICON    DISCARDABLE     "Icons\\Cpu003B.ico"
+IDI_CPU004B             ICON    DISCARDABLE     "Icons\\Cpu004B.ico"
+IDI_CPU005B             ICON    DISCARDABLE     "Icons\\Cpu005B.ico"
+IDI_CPU006B             ICON    DISCARDABLE     "Icons\\Cpu006B.ico"
+IDI_CPU007B             ICON    DISCARDABLE     "Icons\\Cpu007B.ico"
+IDI_CPU008B             ICON    DISCARDABLE     "Icons\\Cpu008B.ico"
+IDI_CPU009B             ICON    DISCARDABLE     "Icons\\Cpu009B.ico"
+IDI_CPU010B             ICON    DISCARDABLE     "Icons\\Cpu010B.ico"
+IDI_CPU011B             ICON    DISCARDABLE     "Icons\\Cpu011B.ico"
+IDI_CPUUNKNB            ICON    DISCARDABLE     "Icons\\CpuUnknB.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,58,0,246
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "W. Rolke\0"
+            VALUE "FileDescription", "WR-Tools ResInfo\0"
+            VALUE "FileVersion", "1.58\0"
+            VALUE "InternalName", "ResInfo\0"
+            VALUE "LegalCopyright", "Copyright © 2003-2011 by W. Rolke\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ResInfo.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "WR-Tools\0"
+            VALUE "ProductVersion", "3.0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    "Q",            IDCANCEL,               VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDC_HIDE,               VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menubar
+//
+
+IDR_GER_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Ausblenden",                  IDC_HIDE
+    MENUITEM "Beenden",                     PSP_USEHICON
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+IDR_GER_MENU SHMENUBAR DISCARDABLE 
+BEGIN
+    IDR_GER_MENU, 2,
+    I_IMAGENONE, IDC_HIDE, TBSTATE_ENABLED, TBSTYLE_AUTOSIZE, IDS_GER_HIDE, 
+    0, NOMENU,
+    I_IMAGENONE, PSP_USEHICON, TBSTATE_ENABLED, TBSTYLE_AUTOSIZE, 
+    IDS_GER_EXIT, 0, NOMENU,
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GER_BAT_MAIN_BACKUP "Haupt-/Hilfsbatterie:"
+    IDS_GER_BAT_MAIN        "Hauptbatterie:"
+    IDS_GER_BAT_BACKUP      "Hilfsbatterie:"
+    IDS_GER_BAT_AC          "Netzspannung:"
+    IDS_GER_FLAG_HIGH       "hoch"
+    IDS_GER_FLAG_LOW        "niedrig"
+    IDS_GER_FLAG_CRITICAL   "kritisch"
+    IDS_GER_FLAG_CHARGING   "laden"
+    IDS_GER_FLAG_NO_BATTERY "keine"
+    IDS_GER_AC_OFFLINE      "getrennt"
+    IDS_GER_AC_ONLINE       "verbunden"
+    IDS_GER_AC_BACKUP       "ersetzt"
+    IDS_GER_STORAGECARD     "Volume"
+    IDS_GER_FILLED          "belegt"
+    IDS_GER_FREE            "frei"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GER_UNKNOWN         "unbekannt"
+    IDS_GER_PROCESSES       "Prozesse"
+    IDS_GER_THREADS         "Threads"
+    IDS_GER_WINDOWS         "Stammfenster"
+    IDS_GER_PIXELS          "Pixel"
+    IDS_GER_COLORS          "Farben"
+    IDS_GER_GRAYSCALE       "Graustufen"
+    IDS_GER_ELECTRIC        "Batterien"
+    IDS_GER_FILES           "Größte Dateien"
+    IDS_GER_DBASE           "Größte Datenbanken"
+    IDS_GER_PCMCIA          "PC Card-PnP-IDs"
+    IDS_GER_BTN_PROC        "Prozesse"
+    IDS_GER_BTN_WND         "Fenster"
+    IDS_GER_RESET           "Softreset"
+    IDS_GER_BTN_PAUSE       "Pause"
+    IDS_GER_BTN_RESUME      "Fortsetzen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GER_HIDE            "Ausblenden"
+    IDS_GER_EXIT            "Beenden"
+    IDP_GER_BATTERY         "Hauptbatterie:%s%.3f V, %d mA, %.1f °C\r\nSicherungsbatterie:\r\n%.3f V (%u%%)"
+    IDP_GER_RESET           "Sollen die Daten zur Batterielaufzeit wirklich gelöscht werden?"
+    IDP_GER_PROCESS         "Ungültiger Task."
+    IDP_GER_ACCESS          "Zugriff verweigert."
+    IDP_GER_SYSTASK         "Dieser Task wird vom System benötigt und kann nicht beendet werden."
+    IDP_GER_TERMINATE       "Warnung: Das Abbrechen eines Prozesses kann zu Datenverlust und Systeminstabilität führen, da weder Zustand noch Daten des Prozesses gespeichert werden. Soll der Prozess wirklich abgebrochen werden?"
+    IDP_GER_NETWORK         "Es besteht keine Netzwerkverbindung."
+    IDP_GER_REBOOT          "Achtung: Diese Funktion führt ein Warmstart des Systems durch. Dabei gehen alle nicht gespeicherten Daten verloren. Soll das Gerät wirklich zurückgesetzt werden?"
+    IDP_GER_FAILBOOT        "Das Gerät konnte nicht zurückgesetzt werden."
+    IDP_GER_NOTFOUND        "Es wurden keine Objekte im RAM-basierten Datenspeicher gefunden."
+    IDP_GER_NOPCCARD        "Keine aktiven PCMCIA-Peripheriegeräte gefunden."
+    IDS_GER_TOOLHELP        "TOOLHELP.DLL nicht gefunden!"
+    IDS_GER_SNAPSHOT        "Momentaufnahme fehlgeschlagen!"
+    IDS_GER_MEMORY          "Nicht genügend Speicher!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GER_MAXTASKS        "Die ersten %u Prozesse"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ENG_RESINFO1 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Battery"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Advanced...",IDC_ADV_BAT,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Reset",IDC_RESET,67,71,60,14
+    LTEXT           "Battery charge:",IDC_STATIC,3,4,70,10
+    RTEXT           "",IDC_BAT,77,4,50,10
+    CONTROL         "Progress1",IDC_PROGRESS_BAT,"msctls_progress32",
+                    WS_BORDER,3,14,124,8
+    CTEXT           "",IDC_BAT_STATUS,3,26,124,10
+    LTEXT           "Operation:",IDC_TEXT_WORKING,7,43,38,10
+    RTEXT           "",IDC_TIME_WORKING,51,43,72,10
+    LTEXT           "Suspend:",IDC_TEXT_SUSPEND,7,54,32,10
+    RTEXT           "",IDC_TIME_SUSPEND,41,54,82,10
+    GROUPBOX        "",IDC_STATIC,3,35,124,31
+END
+
+IDD_ENG_RESINFO2 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Memory"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Databases...",IDC_DATABASE,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Large Files...",IDC_SEARCH,67,71,60,14
+    LTEXT           "Program memory:",IDC_STATIC,3,4,80,10
+    RTEXT           "",IDC_MEM,87,4,40,10
+    CONTROL         "Progress1",IDC_PROGRESS_MEM,"msctls_progress32",
+                    WS_BORDER,3,14,124,8
+    CONTROL         "",IDC_FILLED_MEM,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,
+                    3,24,62,10
+    RTEXT           "",IDC_FREE_MEM,73,24,54,10
+    LTEXT           "Storage memory:",IDC_STATIC,3,38,80,10
+    RTEXT           "",IDC_OBJ,87,38,40,10
+    CONTROL         "Progress1",IDC_PROGRESS_OBJ,"msctls_progress32",
+                    WS_BORDER,3,48,124,8
+    CONTROL         "",IDC_FILLED_OBJ,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,
+                    3,58,62,10
+    RTEXT           "",IDC_FREE_OBJ,73,58,54,10
+END
+
+IDD_ENG_RESINFO3 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Storage"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "More",IDC_NEXT,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "PC Cards...",IDC_PC_CARDS,67,71,60,14
+    LTEXT           "",IDC_DIR_CARD1,3,4,80,10
+    RTEXT           "",IDC_PERCENT_CARD1,87,4,40,10
+    CONTROL         "Progress1",IDC_PROGRESS_CARD1,"msctls_progress32",
+                    WS_BORDER,3,14,124,8
+    CONTROL         "",IDC_FILLED_CARD1,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,3,24,62,10
+    RTEXT           "",IDC_FREE_CARD1,73,24,54,10
+    LTEXT           "",IDC_DIR_CARD2,3,38,80,10
+    RTEXT           "",IDC_PERCENT_CARD2,87,38,40,10
+    CONTROL         "Progress1",IDC_PROGRESS_CARD2,"msctls_progress32",
+                    WS_BORDER,3,48,124,8
+    CONTROL         "",IDC_FILLED_CARD2,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,3,58,62,10
+    RTEXT           "",IDC_FREE_CARD2,73,58,54,10
+END
+
+IDD_ENG_RESINFO4 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Tasks"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Processes",IDC_TASKS,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "End Task",IDC_END_TASK,67,71,60,14
+    LISTBOX         IDC_TASKLIST,4,4,123,53,WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+    CTEXT           "",IDC_TASKINFO,4,58,123,10
+END
+
+IDD_ENG_RESINFO5 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "System"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "IP Address...",IDC_NETWORK,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Warm Boot...",IDC_REBOOT,67,71,60,14
+    CTEXT           "",IDC_OEMINFO,3,4,124,10
+    CTEXT           "",IDC_PLATFORM,3,15,124,10
+    CTEXT           "",IDC_OSVERSION,3,26,124,10
+    CTEXT           "",IDC_MEMORY,3,37,124,10
+    CTEXT           "",IDC_PROCESSOR,3,48,124,10
+    CTEXT           "",IDC_DISPLAY,3,59,124,10
+END
+
+IDD_ENG_RESINFO6 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Settings"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Apply Now",IDC_APPLY,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Icon Color...",IDC_COLOR,67,71,60,14
+    CONTROL         "Reset lifetimes automatically",IDC_OPT_RESET,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,4,3,123,10
+    CONTROL         "Show battery icon",IDC_OPT_BATICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,14,123,10
+    CONTROL         "Show memory icon",IDC_OPT_MEMICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,25,123,10
+    CONTROL         "Show processor icon",IDC_OPT_CPUICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,36,123,10
+    CONTROL         "Use static icons",IDC_OPT_STATICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,47,123,10
+    CONTROL         "Alternative icon filling color",IDC_OPT_COLOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,58,123,10
+END
+
+IDD_ENG_RESINFO7 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Website",IDC_HOMEPAGE,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "FAQ",IDC_FAQ,67,71,60,14
+    CTEXT           "",IDC_APPNAME,3,4,124,10
+    CTEXT           "",IDC_VERSION,3,15,124,10
+    CTEXT           "",IDC_RELEASE,3,26,124,10
+    CTEXT           "",IDC_COPYRIGHT,3,37,124,10
+    CTEXT           "",IDC_AUTHOR,3,48,124,10
+    CTEXT           "",IDC_URL,3,59,124,10
+END
+
+IDD_ENG_RESINFO8 DIALOG DISCARDABLE  8, 8, 131, 89
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Processor"
+FONT 8, "System"
+BEGIN
+    DEFPUSHBUTTON   "Pause",IDC_PAUSE,3,71,60,14,WS_GROUP
+    PUSHBUTTON      "Apply",IDC_ACCEPT,67,71,60,14
+    CONTROL         "",IDC_HISTORY,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,8,3,115,28
+    CTEXT           "0,5 s",IDC_STATIC,7,47,20,10
+    CONTROL         "Slider1",IDC_SPEED,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    WS_GROUP | WS_TABSTOP,31,44,68,20
+    CTEXT           "3,0 s",IDC_STATIC,103,47,20,10
+    GROUPBOX        "Update speed",IDC_STATIC,3,33,124,34,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ENG_RESINFO1, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ENG_RESINFO2, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ENG_RESINFO3, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ENG_RESINFO4, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ENG_RESINFO5, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ENG_RESINFO6, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ENG_RESINFO7, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_ENG_RESINFO8, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 127
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menubar
+//
+
+IDR_ENG_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Hide",                        IDC_HIDE
+    MENUITEM "Exit",                        PSP_USEHICON
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+IDR_ENG_MENU SHMENUBAR DISCARDABLE 
+BEGIN
+    IDR_ENG_MENU, 2,
+    I_IMAGENONE, IDC_HIDE, TBSTATE_ENABLED, TBSTYLE_AUTOSIZE, IDS_ENG_HIDE, 
+    0, NOMENU,
+    I_IMAGENONE, PSP_USEHICON, TBSTATE_ENABLED, TBSTYLE_AUTOSIZE, 
+    IDS_ENG_EXIT, 0, NOMENU,
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CEUX
+//
+
+HI_RES_AWARE CEUX MOVEABLE PURE 
+BEGIN
+    0x0001
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ENG_BAT_MAIN_BACKUP "Main/Backup battery:"
+    IDS_ENG_BAT_MAIN        "Main battery:"
+    IDS_ENG_BAT_BACKUP      "Backup battery:"
+    IDS_ENG_BAT_AC          "AC power status:"
+    IDS_ENG_FLAG_HIGH       "high"
+    IDS_ENG_FLAG_LOW        "low"
+    IDS_ENG_FLAG_CRITICAL   "critical"
+    IDS_ENG_FLAG_CHARGING   "charging"
+    IDS_ENG_FLAG_NO_BATTERY "no battery"
+    IDS_ENG_AC_OFFLINE      "offline"
+    IDS_ENG_AC_ONLINE       "online"
+    IDS_ENG_AC_BACKUP       "backup"
+    IDS_ENG_STORAGECARD     "Volume"
+    IDS_ENG_FILLED          "used"
+    IDS_ENG_FREE            "free"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ENG_UNKNOWN         "unknown"
+    IDS_ENG_PROCESSES       "processes"
+    IDS_ENG_THREADS         "threads"
+    IDS_ENG_WINDOWS         "Top-level windows"
+    IDS_ENG_PIXELS          "pixels"
+    IDS_ENG_COLORS          "colors"
+    IDS_ENG_GRAYSCALE       "grayscales"
+    IDS_ENG_ELECTRIC        "Batteries"
+    IDS_ENG_FILES           "Largest Files"
+    IDS_ENG_DBASE           "Largest Databases"
+    IDS_ENG_PCMCIA          "PC Card PnP IDs"
+    IDS_ENG_BTN_PROC        "Processes"
+    IDS_ENG_BTN_WND         "Windows"
+    IDS_ENG_RESET           "Soft Reset"
+    IDS_ENG_BTN_PAUSE       "Pause"
+    IDS_ENG_BTN_RESUME      "Resume"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ENG_HIDE            "Hide"
+    IDS_ENG_EXIT            "Exit"
+    IDP_ENG_BATTERY         "Main battery:%s%.3f V, %d mA, %.1f °C\r\nBackup battery:\r\n%.3f V (%u%%)"
+    IDP_ENG_RESET           "Are you sure you want to reset the battery lifetime information?"
+    IDP_ENG_PROCESS         "Invalid task."
+    IDP_ENG_ACCESS          "Access denied."
+    IDP_ENG_SYSTASK         "This task is required by the system and cannot be quit."
+    IDP_ENG_TERMINATE       "Warning: Terminating a process can lead to data loss and system instability because neither state nor data of the process are saved. Are you sure to terminate the process?"
+    IDP_ENG_NETWORK         "There is no network connection."
+    IDP_ENG_REBOOT          "Warning: This function will perform a soft boot of the operating system. All unsaved data will be lost. Are you sure you want to reset the device?"
+    IDP_ENG_FAILBOOT        "The device could not be reset."
+    IDP_ENG_NOTFOUND        "No objects were found in RAM-based storage memory."
+    IDP_ENG_NOPCCARD        "No active PCMCIA devices found."
+    IDS_ENG_TOOLHELP        "toolhelp.dll not found"
+    IDS_ENG_SNAPSHOT        "Snapshot failed"
+    IDS_ENG_MEMORY          "Out of memory"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ENG_MAXTASKS        "The first %u processes"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,1472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<html>
+
+<head>
+<meta http-equiv="Htm-Help" content="ResInfo.htm#Main_Contents">
+<title>WR-Tools ResInfo</title>
+<keyword value="wr-tools;resinfo;ressourcen;system" title="WR-Tools ResInfo: Inhalt" href="ResInfo.htm#Main_Contents_Ger">
+<keyword value="symbol;icon;tray;systray;taskleiste" title="WR-Tools ResInfo: Symbole" href="ResInfo.htm#Main_NotifyIcon_Ger">
+<keyword value="batterie;batterieanzeige;akku;standby" title="WR-Tools ResInfo: Batterie" href="ResInfo.htm#Page_Battery_Ger">
+<keyword value="speicher;ram;arbeitsspeicher;datenbanken" title="WR-Tools ResInfo: Speicher" href="ResInfo.htm#Page_Memory_Ger">
+<keyword value="speicherkarte;steckplätze;flash" title="WR-Tools ResInfo: Datenträger" href="ResInfo.htm#Page_Storage_Ger">
+<keyword value="tasks;prozesse;fenster;taskmanager" title="WR-Tools ResInfo: Tasks" href="ResInfo.htm#Page_Tasks_Ger">
+<keyword value="prozessor;cpu;prozessorauslastung" title="WR-Tools ResInfo: Prozessor" href="ResInfo.htm#Page_Processor_Ger">
+<keyword value="system;version;cpu;ram;prozessor;display" title="WR-Tools ResInfo: System" href="ResInfo.htm#Page_System_Ger">
+<keyword value="einstellungen;konfiguration;optionen" title="WR-Tools ResInfo: Einstellungen" href="ResInfo.htm#Page_Settings_Ger">
+<keyword value="rolke;info" title="WR-Tools ResInfo: Info" href="ResInfo.htm#Page_About_Ger">
+<keyword value="fehler;faq" title="WR-Tools ResInfo: Fragen" href="ResInfo.htm#Page_FAQ_Ger">
+<keyword value="wr-tools;resinfo;resourcen;system" title="WR-Tools ResInfo: Contents" href="ResInfo.htm#Main_Contents_Eng">
+<keyword value="icon;tray;systray;taskbar" title="WR-Tools ResInfo: Icons" href="ResInfo.htm#Main_NotifyIcon_Eng">
+<keyword value="battery;monitor;charge;suspend" title="WR-Tools ResInfo: Battery" href="ResInfo.htm#Page_Battery_Eng">
+<keyword value="memory;ram;databases;storage" title="WR-Tools ResInfo: Memory" href="ResInfo.htm#Page_Memory_Eng">
+<keyword value="storage;cards;flash" title="WR-Tools ResInfo: Storage" href="ResInfo.htm#Page_Storage_Eng">
+<keyword value="tasks;processes;windows;task manager" title="WR-Tools ResInfo: Tasks" href="ResInfo.htm#Page_Tasks_Eng">
+<keyword value="processor;cpu;load" title="WR-Tools ResInfo: Processor" href="ResInfo.htm#Page_Processor_Eng">
+<keyword value="system;version;cpu;ram;processor;display" title="WR-Tools ResInfo: System" href="ResInfo.htm#Page_System_Eng">
+<keyword value="settings;configuration;options" title="WR-Tools ResInfo: Settings" href="ResInfo.htm#Page_Settings_Eng">
+<keyword value="rolke;about" title="WR-Tools ResInfo: About" href="ResInfo.htm#Page_About_Eng">
+<keyword value="bugs;faq" title="WR-Tools ResInfo: FAQ" href="ResInfo.htm#Page_FAQ_Eng">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- PegHelp -->
+<p><a name="Main_Contents"></a><b>WR-Tools ResInfo</b></p>
+
+<ul>
+</ul>
+
+<p>Bitte wählen Sie die gewünschte Sprache.<br>
+Please select the desired language.</p>
+
+<ul>
+</ul>
+
+<p><a href="ResInfo.htm#Main_Contents_Ger">Deutsch</a><br
+clear="all">
+</p>
+
+<ul>
+</ul>
+
+<p><a href="ResInfo.htm#Main_Contents_Eng">English</a><br
+clear="all">
+</p>
+
+<ul>
+</ul>
+
+<hr>
+
+<p>WR-Tools ResInfo<br>
+Copyright © 2003-2011<br>
+by Wolfgang Rolke<br>
+www.wolfgang-rolke.de</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Main_Contents_Ger"></a><b>ResInfo Hilfethemen</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo zeigt in einem mehrseitigen Dialogfeld sowie
+im Infobereich der Taskleiste die wichtigsten Systemressourcen
+eines auf Windows Embedded CE basierenden Gerätes an.</p>
+
+<ul>
+</ul>
+
+<p>Das Programm wurde für die Plattform Handheld PC/Windows CE
+Base entwickelt, ist aber auch auf Pocket PC-Geräten lauffähig.</p>
+
+<ul>
+</ul>
+
+<p><a href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbole</a><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br>
+<a href="ResInfo.htm#Page_FAQ_Ger">Fragen und Antworten</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Main_NotifyIcon_Ger"></a><b>Statussymbole</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo fügt drei Statussymbole in den Infobereich
+der Taskleiste hinzu:</p>
+
+<ol>
+    <li><strong>Das erste Symbol zeigt den Ladezustand der
+        Hauptbatterie an.</strong><ul>
+            <li>Oben wird der Ladezustand in Prozent angezeigt.</li>
+            <li>Unten wird der Ladezustand farblich
+                gekennzeichnet:<ul>
+                    <li>0-10%: Rot bzw. Weiß</li>
+                    <li>11-30%: Gelb bzw. Hellgrau</li>
+                    <li>31-100%: Grün bzw. Dunkelgrau</li>
+                    <li>Laden: Blau bzw. Schwarz</li>
+                    <li>Unbekannt: Transparent</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><strong>Das zweite Symbol zeigt die Belegung des
+        Hauptspeichers an.</strong><ul>
+            <li>Die Skala oben zeigt die Aufteilung des
+                Hauptspeichers in Programmspeicher (links) und
+                Datenspeicher (rechts) an.</li>
+            <li>Im Balken in der Mitte wird die Belegung des
+                Programmspeichers angezeigt.</li>
+            <li>Im unteren Balken wird die Belegung des
+                Datenspeichers angezeigt.</li>
+        </ul>
+    </li>
+    <li><strong>Das dritte Symbol zeigt die Auslastung der CPU an.</strong><ul>
+            <li>Je größer der Balken ist, um so länger war der
+                Prozessor im Meßintervall aktiv.</li>
+        </ul>
+    </li>
+</ol>
+
+<p>Änderungen werden innerhalb von fünf Sekunden angezeigt.</p>
+
+<ul>
+</ul>
+
+<p>Durch Antippen eines der Statussymbole wird das Hauptfenster
+von ResInfo geöffnet und die entsprechende Registerkarte
+ausgewählt.<br>
+Das Hauptfenster kann mit der Schaltfläche <strong>OK</strong>
+ausgeblendet werden. Über die Schaltfläche <strong>X</strong>
+wird WR-Tools ResInfo geschlossen (beendet).</p>
+
+<ul>
+</ul>
+
+<p>Die Symbole werden nur auf der Standard-Shell dargestellt.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Battery_Ger"></a><b>Registerkarte Batterie</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo zeigt auf der Registerkarte Batterie den <strong>Ladezustand</strong>
+der Hauptbatterie, den <strong>Status</strong> der Haupt- und
+Sicherungsbatterien und die <strong>Batterielaufzeit</strong> des
+Gerätes an:</p>
+
+<ul>
+    <li>Die Balkenanzeige informiert über die <strong>Restladung</strong>
+        der Hauptbatterie.</li>
+    <li>Die Statusanzeige informiert über den jeweils
+        kritischeren Zustand von Haupt- und Hilfsbatterie in der
+        Reihenfolge <strong>hoch</strong>, <strong>niedrig</strong>,
+        <strong>kritisch</strong>, <strong>laden</strong> und <strong>keine</strong>
+        Batterie.<br>
+        Im Gegensatz zur Färbung des <a
+        href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbols</a>
+        in der Taskleiste wird hier der vom Gerät gemeldete
+        Zustand angezeigt.</li>
+    <li>Die Batterielaufzeit informiert über die Zeitdauer, mit
+        der das Gerät mit Batterien betrieben wurde:<ol>
+            <li>Bei <strong>Betrieb</strong> wird die Zeit
+                angezeigt, in der das Gerät mit voller
+                Geschwindigkeit arbeitet oder in der sich das
+                Gerät im Leerlauf befindet.<br>
+                Das Gerät befindet sich im Leerlauf, wenn alle
+                gestarteten Programme (Anwendungen, Treiber,
+                Betriebssystemkomponenten) aktuell kein
+                Programmcode ausführen. Dann kann der Prozessor
+                des Gerätes kurzzeitig angehalten werden (Energiesparmodus).
+                Sobald ein Ereignis eintritt (Benutzereingabe,
+                Zeitgebersignal, Datenempfang, usw.), wird die
+                CPU wieder mit vollem Takt betrieben. Dieser
+                Betriebsartwechsel erfolgt für den Benutzer und
+                den laufenden Programmen transparent im
+                Millisekundenbereich.</li>
+            <li>Bei <strong>Standby</strong> wird die Zeit
+                angezeigt, in der sich das Gerät im Suspend-Modus
+                befand.<br>
+                In diesem Zustand werden alle Komponenten
+                stromlos geschaltet. Lediglich der Speicher (RAM)
+                wird zur Datenerhaltung noch mit Strom versorgt.
+                Auch die CPU wird abgeschaltet. Lediglich ein
+                separater, programmierbarer Zeitgeber und eine
+                Komponente zum Abhören der externen
+                Schnittstellen sind noch in Betrieb. Somit kann
+                keine Anwendung ausgeführt werden.<br>
+                Daher kann ResInfo erst nach dem Einschalten des
+                Gerätes erkennen, ob die Batterie im
+                ausgeschalteten Zustand geladen wurde.
+                Entsprechend wird auch erst dann die Standby-Zeit
+                zurückgesetzt und neu gemessen.</li>
+        </ol>
+        <p>Die Batterielaufzeiten werden nach längeren
+        Ladezeiten sowie nach dem automatischen Ladestop auf Null
+        zurückgesetzt:</p>
+        <ul>
+            <li>Wenn Netzspannung anliegt <strong>und</strong>
+                der Ladezustand 100% beträgt <strong>und</strong>
+                der Batteriestatus <em>hoch</em> oder <em>keine</em>
+                <strong>und</strong> nicht (mehr) <em>laden</em>
+                ist.</li>
+            <li>Wenn zwischen zwei Messungen die Differenz der
+                Ladezustände größer oder gleich 50% betragen
+                hat <em><strong>oder</strong></em> die Differenz
+                größer oder gleich 25% betragen hat, wenn der
+                neue Ladezustand 100% beträgt.</li>
+        </ul>
+        <p>Sollte dies je nach Situation oder Gerät nicht
+        erfolgen, können die Laufzeiten mit der Schaltfläche <strong>Zurücksetzen</strong>
+        manuell gelöscht werden.<br>
+        Werden bei einem Gerät die Laufzeiten zurückgesetzt,
+        obwohl das Gerät nicht geladen wurde, kann das
+        automatische Zurücksetzen durch eine Option auf der <a
+        href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+        Einstellungen</a> deaktiviert werden.</p>
+    </li>
+</ul>
+
+<p>Über die Schaltfläche <strong>Erweitert</strong> können
+zusätzliche Daten zu den Batterien abgefragt werden. Diese
+Informationen werden jedoch nur von wenigen Geräten korrekt
+bereitgestellt.</p>
+
+<ul>
+</ul>
+
+<p>Änderungen der Batteriezustände werden innerhalb von fünf
+Sekunden angezeigt. Die Auflösung der Batterieanzeige ist
+abhängig vom Batterietreiber des Gerätes. Die
+Batterielaufzeiten werden alle zehn Minuten in der
+Systemregistrierung gesichert.</p>
+
+<ul>
+</ul>
+
+<p>Der Ladezustand der Hauptbatterie wird auch in einem <a
+href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbol</a> in der
+Systemablage angezeigt.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbole</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Memory_Ger"></a><b>Registerkarte Speicher</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo zeigt auf der Registerkarte Speicher die
+Belegung des <strong>Programmspeichers</strong> (auch System-
+oder Arbeitsspeicher genannt) und des <strong>Datenspeichers</strong>
+(auch Objektablage oder Massenspeicher genannt) an. Beide
+Speicherbereiche befinden sich in der Regel im Hauptspeicher (RAM)
+eines Gerätes.</p>
+
+<ul>
+    <li>Im <strong>Programmspeicher</strong> befinden sich der
+        aktuell benötigte Programmcode laufender Anwendungen und
+        Treiber sowie die von diesen Programmen aktuell
+        benötigten Daten. Der für die Verarbeitung von
+        Dokumenten erforderliche Arbeitsspeicher entstammt
+        ebenfalls aus dem Programmspeicher.<br>
+        Für eine schnelle und sichere Nutzung sollte dem System
+        möglichst viel freier Programmspeicher zur Verfügung
+        stehen.</li>
+    <li>Im <strong>Datenspeicher</strong> befinden sich alle
+        nicht im Festspeicher (ROM) enthaltenen Programmdateien
+        und Dokumente, die Registrierungsdatenbank sowie weitere
+        Anwendungsdatenbanken. Alle Objekte im Datenspeicher sind
+        komprimiert.<br>
+        Wenn das Betriebssystem die freie Aufteilung des
+        Hauptspeichers in Programm- und Datenspeicher erlaubt,
+        sollte der Datenspeicher zugunsten des Programmspeichers
+        klein gewählt werden. Dokumente und viele Anwendungen
+        können statt dessen auf externen <a
+        href="ResInfo.htm#Page_Storage_Ger">Speicherkarten</a>
+        abgelegt werden.</li>
+</ul>
+
+<p>Nach Betätigen der Schaltfläche <strong>Datenbanken</strong>
+werden die fünf größten Datenbanken im RAM-basierenden
+Datenspeicher angezeigt. Über die Schaltfläche <strong>Große
+Dateien</strong> werden die fünf größten Dateien im
+Datenspeicher angezeigt.</p>
+
+<ul>
+</ul>
+
+<p>Ab Windows Mobile 5.0 befindet sich der Datenspeicher in einem
+nicht flüchtigen Flash-Speicher. Alle Objekte sind dateibasiert
+(<em>Hive</em>-basierende Registry, <em>Volume</em>-basierende
+Datenbanken).</p>
+
+<ul>
+</ul>
+
+<p>Änderungen der Speicherbelegung werden innerhalb von fünf
+Sekunden angezeigt. Die Auflösung beträgt je nach
+Prozessorarchitektur 1 KB oder 4 KB.</p>
+
+<ul>
+</ul>
+
+<p>Die Speicherbelegung wird auch in einem <a
+href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbol</a> in der
+Systemablage angezeigt.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbole</a><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Storage_Ger"></a><b>Registerkarte Datenträger</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo zeigt auf der Registerkarte Datenträger die
+Belegung von nicht flüchtigen <strong>Speichermedien</strong> (Flash-Speicher,
+Speicherkarten, externe Speichergeräte) an.</p>
+
+<ul>
+</ul>
+
+<p>Wurden mehr als zwei Datenträger bereitgestellt, kann man mit
+der Schaltfläche <strong>Weitere</strong> alle Volumes
+nacheinander anzeigen lassen.</p>
+
+<ul>
+</ul>
+
+<p>Über die Schaltfläche <strong>PC-Karten</strong> können die
+Plug and Play-Bezeichnungen aktiver PCMCIA-Geräte ermittelt
+werden.</p>
+
+<ul>
+</ul>
+
+<p>Die Anzeige wird automatisch alle fünf Sekunden aktualisiert.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Tasks_Ger"></a><b>Registerkarte Tasks</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo zeigt auf der Registerkarte Tasks
+Informationen zu aktuell ausgeführten <strong>Prozessen</strong>
+und deren sichtbare <strong>Hauptfenster</strong> an.</p>
+
+<ul>
+</ul>
+
+<p>Über die Schaltfläche <strong>Fenster</strong> kann man sich
+alle sichtbaren Stammfenster anzeigen lassen. Es wird der Titel
+des Fensters und in Klammern der Name der Fensterklasse angezeigt.</p>
+
+<ul>
+</ul>
+
+<p>Um die Fenster der Shell auszulassen, ändern Sie mit Hilfe
+eines Registrierungs-Editors den Wert des Eintrags <em>HideShellWnd</em>
+im Registrierungsschlüssel HKEY_CURRENT_USER\Software\WR-Tools\ResInfo
+von 0 auf 1. Danach muß ResInfo neu gestartet werden.</p>
+
+<ul>
+</ul>
+
+<p>Über die Schaltfläche <strong>Prozesse</strong> kann man
+sich die ausgeführten Prozesse anzeigen lassen (max. 42). Es
+wird der Modulname der Anwendung und in Klammern die Titel
+sichtbarer Fenster eines Prozesses angezeigt. Um die Prozessliste
+anzeigen zu können, muß auf dem Gerät die Bibliothek toolhelp.dll
+vorhanden sein.</p>
+
+<ul>
+</ul>
+
+<p>Durch ein Doppelklick auf ein Fenstertitel wird das
+dazugehörige Fenster in den Vordergrund gebracht und aktiviert.
+Mit einem Doppelklick auf ein Prozess werden alle von diesem
+Prozess aktuell geladenen Module angezeigt. Wenn diese Module
+weitere Module laden, so werden auch diese mit angezeigt.</p>
+
+<ul>
+</ul>
+
+<p>Die Taskliste wird alle fünf Sekunden aktualisiert.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Processor_Ger"></a><b>Registerkarte Prozessor</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo zeigt auf der Registerkarte Prozessor die <strong>Auslastung
+der CPU</strong> an.</p>
+
+<p>In einem einstellbaren Zeitintervall werden die Laufzeiten
+aller Programmfäden (Threads) berechnet und dieses Verhältnis
+in Prozent angezeigt. Im Diagramm wird der Verlauf der CPU-Auslastung
+dargestellt.</p>
+
+<ul>
+</ul>
+
+<p>Um die Prozessorauslastung anzeigen zu können, muß auf dem
+Gerät die Bibliothek toolhelp.dll vorhanden sein. Auf Geräte
+mit zweischichtigem Sicherheitsmodell (z.B. Smartphones) kann die
+CPU-Auslastung mangels Zugriffsrechte nicht ermittelt werden.</p>
+
+<ul>
+</ul>
+
+<p>Die Prozessorauslastung wird auch in einem <a
+href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbol</a> in der
+Systemablage angezeigt.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbole</a><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_System_Ger"></a><b>Registerkarte System</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo zeigt auf der Registerkarte System die
+wichtigsten <strong>Systeminformationen</strong> des Gerätes an.</p>
+
+<ul>
+</ul>
+
+<p>Von oben nach unten werden folgende Informationen angezeigt:</p>
+
+<ol>
+    <li><strong>Interne Bezeichnung des Gerätes</strong></li>
+    <li><strong>Plattformtyp und ggf. Plattformversion</strong></li>
+    <li><strong>Betriebssystem und Version</strong></li>
+    <li><strong>Summe aus Programm- und Datenspeicher</strong></li>
+    <li><strong>Prozessortyp/-architektur und ggf. Taktfrequenz</strong></li>
+    <li><strong>Bildschirmauflösung, Farbtiefe</strong></li>
+</ol>
+
+<ul>
+</ul>
+
+<p>Die installierte Version des Microsoft .NET Compact Framework
+kann mit dem Tool \Windows\cgacutil.exe ermittelt werden.</p>
+
+<ul>
+</ul>
+
+<p>Bei der Taktfrequenz in Klammern handelt es sich um eine
+Konstante, die im <em>Board Support Package</em> definiert wurde.</p>
+
+<ul>
+</ul>
+
+<p>Wenn eine Netzwerkverbindung besteht, kann man sich über die
+Schaltfläche <strong>IP-Adresse</strong> die aktuell zugewiesene
+Adresse des Netzwerkknotens anzeigen lassen. Auf einem Gerät
+können mehrere Netzwerkverbindungen gleichzeitig bestehen. Z.B.
+kann über ein serielles Kabel, USB, Infrarot (IrDA) oder
+Bluetooth eine Verbindung zu einem PAN (Personal Area Network)
+hergestellt sein und gleichzeitig über ein Modem oder eine
+Netzwerkkarte (Ethernet) eine Verbindung zu einem WAN (Wide Area
+Network) bestehen. Dann werden alle zugewiesenen IP-Adressen
+aufgelistet. Im Fenstertitel wird der Hostname des Gerätes
+angezeigt.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Settings_Ger"></a><b>Registerkarte Einstellungen</b></p>
+
+<ul>
+</ul>
+
+<p>Auf der Registerkarte Einstellungen kann die <strong>Konfiguration</strong>
+von WR-Tools ResInfo vorgenommen werden.</p>
+
+<p>Unter anderem können folgende Optionen gewählt werden:</p>
+
+<ul>
+    <li><strong>Laufzeiten automatisch zurücksetzen</strong><br>
+        Werden bei einem Gerät die <a
+        href="ResInfo.htm#Page_Battery_Ger">Batterielaufzeiten</a>
+        zurückgesetzt, obwohl das Gerät nicht geladen wurde,
+        kann das automatische Zurücksetzen deaktiviert werden.</li>
+</ul>
+
+<ul>
+    <li><strong>Statische Symbole verwenden</strong><br>
+        Die Symbole im Statusbereich werden entsprechend der vom
+        System gemeldeten Werte zur Laufzeit gezeichnet. Die
+        Plattform Pocket PC stellt jedoch dynamisch erzeugte
+        Symbole nicht immer korrekt dar. Daher kann mit dieser
+        Option auf ein Satz statisch bereitgestellter Symbole
+        umgeschaltet werden.</li>
+</ul>
+
+<ul>
+    <li><strong>Alternative Symbolfüllfarben<br>
+        </strong>Sollten die Farben des <a
+        href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbols</a>
+        für den Hauptspeicher schlecht zu unterscheiden sein,
+        kann eine alternative Farbkombination gewählt werden.</li>
+</ul>
+
+<p>Mit der Schaltfläche <strong>Anwenden</strong> werden die
+Einstellungen sofort übernommen. Sie werden auch ohne Nachfrage
+übernommen, wenn eine andere Registerkarte ausgewählt wird oder
+ResInfo mit der Schaltfläche <strong>OK</strong> ausgeblendet
+wird.<br>
+Mit der Schaltfläche <strong>Symbolfarbe</strong> kann eine
+andere Zeichenfarbe für die Statussymbole (Text, Konturen)
+ausgewählt werden. Sollte der Symboltext bei Verwendung von <em>ClearType</em>
+unschöne Farbflecken aufweisen, wählen Sie bitte Schwarz als
+Zeichenfarbe aus.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Main_NotifyIcon_Ger">Statussymbole</a><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_About_Ger">Registerkarte Info</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_About_Ger"></a><b>Registerkarte Info</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo zeigt auf der Registerkarte Info <strong>Informationen</strong>
+über das Programm WR-Tools ResInfo an.</p>
+
+<ul>
+</ul>
+
+<p>Es werden folgende Informationen angezeigt:</p>
+
+<ol>
+    <li><strong>Name der Anwendung (WR-Tools ResInfo)</strong></li>
+    <li><strong>Version: &lt;Hauptversion&gt;.&lt;Nebenversion&gt;.&lt;Build-Nummer&gt;</strong></li>
+    <li><strong>Binärdatei: ResInfo.&lt;Zielplattform&gt;.&lt;Subsystemversion&gt;[.Dbg]</strong></li>
+    <li><strong>Rechtliche Hinweise</strong></li>
+    <li><strong>Kontaktinformationen</strong></li>
+</ol>
+
+<ul>
+</ul>
+
+<p>Über die Schaltfläche <strong>Homepage</strong> gelangen Sie
+zur Produktseite von WR-Tools ResInfo im Internet.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Page_Battery_Ger">Registerkarte Batterie</a><br>
+<a href="ResInfo.htm#Page_Memory_Ger">Registerkarte Speicher</a><br>
+<a href="ResInfo.htm#Page_Storage_Ger">Registerkarte Datenträger</a><br>
+<a href="ResInfo.htm#Page_Tasks_Ger">Registerkarte Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Ger">Registerkarte Prozessor</a><br>
+<a href="ResInfo.htm#Page_System_Ger">Registerkarte System</a><br>
+<a href="ResInfo.htm#Page_Settings_Ger">Registerkarte
+Einstellungen</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_FAQ_Ger"></a><b>Häufig gestellte Fragen</b></p>
+
+<ul>
+</ul>
+
+<ol>
+    <li><strong>Warum erscheint WR-Tools ResInfo nicht in der
+        Liste unter Einstellungen » System » Speicher »
+        Ausgeführte Programme? ResInfo kann somit nicht beendet
+        werden, um es zu deinstallieren oder um ein Backup
+        durchzuführen (Pocket PC).<br>
+        </strong>Damit ResInfo in dieser Liste erscheint, muß es
+        durch Tippen auf eines der Statussymbole eingeblendet
+        werden. Alternativ kann man ResInfo auch über den Befehl
+        <em>Beenden</em> schließen. ResInfo wird nach Betätigen
+        der Schaltfläche OK ausgeblendet und nutzt somit nicht
+        die Smart Minimize-Funktion. Dadurch wird verhindert,
+        daß ResInfo automatisch beendet wird, um die
+        Batterielaufzeiten korrekt ermitteln zu können.</li>
+    <li><strong>Warum verschwindet ab und zu eines der Symbole
+        aus dem Infobereich der Befehlsleiste (Pocket PC)?<br>
+        </strong>Hierbei handelt es sich um einen noch
+        unbehobenen Fehler in der Shell der Plattform Pocket PC.
+        Er erscheint, wenn ein zur Laufzeit erzeugtes Symbol mit
+        dem selben Bezug aktualisiert wird. Bei der jeweils
+        nächsten Aktualisierung wird das Symbol wieder korrekt
+        angezeigt. Wählen Sie in den Optionen die statischen
+        Symbole, um dieses Problem zu vermeiden.</li>
+    <li><strong>Das Fenster von ResInfo enthält viel Freiraum
+        und redundante Informationen. Warum wird der Platz nicht
+        für weitere Nutzinformationen verwendet (Pocket PC)?<br>
+        </strong>Die kompakte Anordnung der Dialogelemente wurde
+        gewählt, damit ResInfo auch auf älteren Palm-size PCs
+        und Handheld PCs mit nur 240 Bildpunkten Breite bzw.
+        Höhe nutzbar ist. Die Freiräume entstehen durch die
+        Vollbilddarstellung des Pocket PCs. Durch Bearbeiten der
+        Registrierungsdatenbank von Windows CE kann man ResInfo
+        auch auf einem Pocket PC in der klassischen Darstellung
+        ausführen. Ändern Sie dazu mit Hilfe eines
+        Registrierungs-Editors den Wert des Eintrags <em>ClassicView</em>
+        im Registrierungsschlüssel HKEY_CURRENT_USER\Software\WR-Tools\ResInfo
+        von 0 auf 1. Danach muß ResInfo neu gestartet werden.</li>
+    <li><strong>Warum werden die Statusinformationen nicht oben
+        in der Navigationsleiste oder im Heute-Dialogfeld
+        angezeigt (Pocket PC)?<br>
+        </strong>Die klassische Darstellung der Statussymbole in
+        der Befehlsleiste wurde gewählt, damit ResInfo auf
+        möglichst vielen Windows CE-Plattformen (Palm-size PC,
+        Handheld PC, Tablet PC, Rugged PDA, GPS Handheld, Thin
+        Client, Set-Top-Box, usw.) lauffähig ist.</li>
+    <li><strong>Ist WR-Tools ResInfo auch auf einem SmartPhone (Windows
+        Mobile Standard) lauffähig?<br>
+        </strong>ResInfo nutzt als Hauptfenster ein sogenanntes
+        Property Sheet. Dieses systemdefinierte, mehrseitige
+        Dialogfeld wird von der speziellen Plattform SmartPhone
+        nicht unterstützt.</li>
+    <li><strong>Wie wechselt man zur deutschen
+        Benutzeroberfläche?<br>
+        </strong>ResInfo prüft beim Start das in den
+        Ländereinstellungen gewählte Gebietsschema. Ist hier
+        Deutsch eingestellt, wird automatisch die deutsche
+        Oberfläche verwendet. Andernfalls wird die englische
+        Oberfläche verwendet. Bietet das Gerät Deutsch als
+        Option nicht an, kann die deutsche Benutzeroberfläche
+        von ResInfo durch Bearbeiten der Registrierungsdatenbank
+        erzwungen werden. Ändern Sie dazu mit Hilfe eines
+        Registrierungs-Editors den Wert des Eintrags <em>ForceGerUI</em>
+        im Registrierungsschlüssel HKEY_CURRENT_USER\Software\WR-Tools\ResInfo
+        von 0 auf 1. Danach muß ResInfo neu gestartet werden.</li>
+    <li><strong>ResInfo zählt die Batterielaufzeit hoch. Die
+        Anzeige der Restlaufzeit wäre aber viel praktischer.<br>
+        </strong>WR-Tools ResInfo kann auch auf Geräten
+        eingesetzt werden, die eine deutlich längere
+        Batterielaufzeit aufweisen als Pocket PCs. Dann wäre
+        eine Restanzeige anfangs sehr ungenau. Zudem ist ResInfo
+        auch auf Geräten ohne Batterien lauffähg.</li>
+</ol>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Main_Contents_Ger">ResInfo Hilfethemen</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Main_Contents_Eng"></a><b>ResInfo help contents</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo shows the most important system resources
+of a Windows Embedded CE based device, in a tab control dialog
+box as well as in the notification area of the taskbar.</p>
+
+<ul>
+</ul>
+
+<p>The application was developed especially for the platform
+Handheld PC/Windows CE Base. However, it is also operational on
+Pocket PC devices.</p>
+
+<ul>
+</ul>
+
+<p><a href="ResInfo.htm#Main_NotifyIcon_Eng">Tray icons</a><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br>
+<a href="ResInfo.htm#Page_FAQ_Eng">FAQ</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Main_NotifyIcon_Eng"></a><b>Tray icons</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo adds three icons to the notification area of
+the taskbar:</p>
+
+<ol>
+    <li><strong>The first icon indicates the charge status of the
+        main battery.</strong><ul>
+            <li>At the top, the charge status is indicated in
+                percent. </li>
+            <li>Below, the charge status is marked in color:<ul>
+                    <li>0-10%: Red or White</li>
+                    <li>11-30%: Yellow or Light Grey</li>
+                    <li>31-100%: Green or Dark Grey</li>
+                    <li>Charging: Blue or Black</li>
+                    <li>Unknown: Transparent</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><strong>The second icon indicates the allocation of the
+        main memory.</strong><ul>
+            <li>The scale at the top indicates the split of the
+                main memory in program memory (on the left) and
+                storage memory (on the right).</li>
+            <li>The middle bar shows the usage of program memory.</li>
+            <li>The bottom bar shows the usage of storage memory.</li>
+        </ul>
+    </li>
+    <li><strong>The third icon displays the CPU usage.</strong><ul>
+            <li>The longer the central processing unit was active
+                in the measuring interval, the bar is greater.</li>
+        </ul>
+    </li>
+</ol>
+
+<p>The first two icons are updated every 5 seconds.</p>
+
+<ul>
+</ul>
+
+<p>By tapping one of the icons the main window of ResInfo is
+opened and the corresponding tab is selected.<br>
+The main window can be hidden with the <strong>OK</strong> button.
+The <strong>X</strong> button will close WR-Tools ResInfo.</p>
+
+<ul>
+</ul>
+
+<p>The icons are displayed only on the standard shell.</p>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Battery_Eng"></a><b>Tab Battery</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo indicates on the sheet Battery the <strong>charge
+state</strong> of the main battery, the <strong>state</strong> of
+the main and backup battery and the <strong>battery lifetime</strong>
+of the device:</p>
+
+<ul>
+    <li>The progress bar informs about the <strong>residual
+        charge</strong> of the main battery.</li>
+    <li>The state display informs about the state more critical
+        in each case of main battery and auxiliary battery in the
+        order <strong>high</strong>, <strong>low</strong>, <strong>critically</strong>,
+        <strong>charging</strong> and <strong>no</strong> battery.<br>
+        In contrast to coloring of the <a
+        href="ResInfo.htm#Main_NotifyIcon_Eng">tray icon</a> in
+        the task bar, the state announced by the device is
+        indicated here.</li>
+    <li>The battery lifetime informs about the duration with
+        which the device was pursued with batteries:<ol>
+            <li>At <strong>Operation</strong> the time is
+                indicated in which the device works at full speed
+                or in which the device is in the idling.<br>
+                The device is in the idling if all running
+                programs (applications, drivers, operating system
+                components) currently execute no program code.
+                Then the processor of the device can be stopped
+                for a short time (energy savings mode). As soon
+                as an event enters (user's input, timer signal,
+                data reception, etc.), the CPU is run again with
+                full clock speed. This mode of operation change
+                follows for the user and the running programs
+                unnoticed in milliseconds.</li>
+            <li>At <strong>Suspend</strong> the time is indicated
+                in which the device was in the suspend mode.<br>
+                In this state, all components are switched
+                without current. Merely the memory (RAM) is
+                supplied still with voltage to data preservation.
+                In addition, the CPU is switched off. Merely a
+                separate, programmable timer and a component for
+                monitoring of the external interfaces are still
+                in company. Therefore, no application can be
+                executed.<br>
+                Hence, ResInfo can recognize only after the
+                turning on of the device whether the battery was
+                charged in the switched off state. Accordingly,
+                the standby time will be cleared at this time and
+                is measured anew.</li>
+        </ol>
+        <p>The battery lifetimes are reset to zero after longer
+        charging times as well as after the automatic charging
+        stop: </p>
+        <ul>
+            <li>If AC supply voltage lies close <strong>and</strong>
+                the charging state amounts to 100% <strong>and</strong>
+                the battery state is <em>high</em> or <em>none</em>
+                <strong>and</strong> not (more) <em>charge</em>.</li>
+            <li>If between two measurements the charging states
+                has amounted greater or immediately 50% <em><strong>or</strong></em>
+                the difference has amounted greater or
+                immediately 25% if the new charging state amounts
+                to 100%.</li>
+        </ul>
+        <p>Should this not follow according to situation or
+        device, the data can be cleared by hand with the button <strong>Reset</strong>.<br>
+        If the data are cleared by a device, although the device
+        was not charged, automatic resetting can be deactivated
+        by an option on the sheet <a
+        href="ResInfo.htm#Page_Settings_Eng">Settings</a>.</p>
+    </li>
+</ul>
+
+<p>With the button <strong>Advanced</strong>, additional data of
+the batteries can be determined. However, the information is
+provided only by few devices correctly.</p>
+
+<ul>
+</ul>
+
+<p>Changes of the battery conditions are indicated within five
+seconds. The resolution of the battery display depends on the
+battery driver of the device. The battery lifetimes are saved all
+ten minutes in the system registration.</p>
+
+<ul>
+</ul>
+
+<p>The charging state of the main battery is also indicated in a <a
+href="ResInfo.htm#Main_NotifyIcon_Eng">tray icon</a> in the
+taskbar.</p>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Main_NotifyIcon_Eng">Tray icons</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Memory_Eng"></a><b>Tab Memory</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo indicates on the sheet Memory the allocation
+of <strong>program memory</strong> (also named system memory or
+working memory) and <strong>storage memory</strong> (also named
+object store or mass storage). Both storage areas are normally
+located in main memory (RAM) of a device.</p>
+
+<ul>
+    <li>In <strong>program memory</strong> the currently required
+        program code of running applications and drivers resides,
+        as well as the data currently required by these programs.
+        The working memory necessary for processing documents is
+        also taken from program memory.<br>
+        For quick and safe use, as much free program memory as
+        possible should be available to the system.</li>
+    <li>In the <strong>storage memory</strong> resides all
+        program files and documents not contained in the
+        permanent memory (ROM), the registration database as well
+        as further application databases. All objects in storage
+        memory are compressed.<br>
+        If the operating system permits free subdivision of main
+        memory in program memory and storage memory, storage
+        memory should be chosen small in favor of program memory.
+        Documents and many applications can be placed on external
+        <a href="ResInfo.htm#Page_Storage_Eng">storage cards</a>
+        instead.</li>
+</ul>
+
+<p>After pushing the <strong>Databases</strong> button, the five
+largest databases in RAM-based storage memory are indicated.
+After pushing the <strong>Largest Files</strong> button, the five
+largest files in the storage memory are indicated.</p>
+
+<ul>
+</ul>
+
+<p>From Windows Mobile 5.0, the storage memory is be located in
+persistent flash memory. All objects are file-based (<em>Hive</em>-based
+Registry, <em>Volume</em>-based databases).</p>
+
+<ul>
+</ul>
+
+<p>Changes of the memory allocation are indicated within five
+seconds. The resolution amounts to 1 KB or 4 KB according to
+processor architecture.</p>
+
+<ul>
+</ul>
+
+<p>The memory allocation is also indicated in a <a
+href="ResInfo.htm#Main_NotifyIcon_Eng">tray icon</a> in the
+taskbar.</p>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Main_NotifyIcon_Eng">Tray icons</a><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Storage_Eng"></a><b>Tab Storage</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo indicates on the sheet Storage the allocation
+of non-volatile <strong>storage media</strong> (flash memory,
+memory cards, external storage devices).</p>
+
+<ul>
+</ul>
+
+<p>If more than two storage media were mounted, the button <strong>More</strong>
+indicates all volumes successively.</p>
+
+<ul>
+</ul>
+
+<p>With the button <strong>PC Cards</strong>, the Plug and Play
+names of active PCMCIA devices can be determined.</p>
+
+<ul>
+</ul>
+
+<p>The display is updated automatically every five seconds.</p>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Tasks_Eng"></a><b>Tab Tasks</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo indicates on the sheet Tasks information of
+currently executed <strong>processes</strong> and their visible <strong>main
+windows</strong>.</p>
+
+<ul>
+</ul>
+
+<p>With the button <strong>Windows</strong>, all visible main
+windows are indicated. The window title and in brackets the name
+of the window class is indicated.</p>
+
+<ul>
+</ul>
+
+<p>To skip the windows of the shell, change with a registration
+editor the value of the entry <em>HideShellWnd</em> in the
+registration key HKEY_CURRENT_USER\Software\WR-Tools\ResInfo from
+0 to 1. Then ResInfo must be restarted.</p>
+
+<ul>
+</ul>
+
+<p>With the button <strong>Processes</strong>, the currently
+executed processes are indicated (max. 42). The module name of
+the application and in brackets the titles of visible windows of
+the process are indicated. To be able to indicate the process
+list, the library toolhelp.dll must exist on the device.</p>
+
+<ul>
+</ul>
+
+<p>With a double click on a window title the matching window is
+activated resp. brought in the foreground. With a double click on
+a process, the modules currently loaded by this process are
+indicated. If these modules load farther modules, these are also
+indicated.</p>
+
+<ul>
+</ul>
+
+<p>The task list is updated every five seconds.</p>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Processor_Eng"></a><b>Tab Processor</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo indicates on the sheet Processor the <strong>usage</strong>
+of the <strong>central processing unit</strong>.</p>
+
+<p>In an adjustable time interval the run times of all program
+threads are computed and this ratio is indicated in percent. The
+display shows the progress of the CPU usage.</p>
+
+<ul>
+</ul>
+
+<p>To be able to indicate the processor load, the library
+toolhelp.dll must exist on the device. On devices with two-tier
+security model (e.g. Smartphones) the CPU utilization can't be
+determined for lack of access rights.</p>
+
+<ul>
+</ul>
+
+<p>The processor load is also indicated in a <a
+href="ResInfo.htm#Main_NotifyIcon_Eng">tray icon</a> in the
+taskbar.</p>
+
+<ul>
+</ul>
+
+<p><b>Siehe auch</b><br>
+<a href="ResInfo.htm#Main_NotifyIcon_Eng">Tray icons</a><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_System_Eng"></a><b>Tab System</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo indicates on the sheet System the most
+important <strong>system information</strong> of the device.</p>
+
+<ul>
+</ul>
+
+<p>From above down the following information is indicated:</p>
+
+<ol>
+    <li><strong>Internal name of the device</strong></li>
+    <li><strong>Platform type and platform version (if available)</strong></li>
+    <li><strong>Operating system and version</strong></li>
+    <li><strong>Sum of program memory and storage memory</strong>
+    </li>
+    <li><strong>Processor type/-architecture and clock speed (if
+        available)</strong></li>
+    <li><strong>Screen resolution, color depth</strong></li>
+</ol>
+
+<ul>
+</ul>
+
+<p>The installed version of the Microsoft .NET Compact Framework
+can be determined with the tool \Windows\cgacutil.exe.</p>
+
+<ul>
+</ul>
+
+<p>The clock speed in parentheses concerns a constant defined in
+the <em>board support package</em>.</p>
+
+<ul>
+</ul>
+
+<p>If a network connection exists, the currently assigned address
+of the network node is indicated with the button <strong>IP
+Address</strong>. On a device, several network connections can
+exist at the same time. For example, a connection can be
+established via a serial cable, USB, infrared (IrDA) or Bluetooth
+to a PAN (Personal Area Network) and additional a connection to a
+WAN (Wide Area Network) via a modem or a network card (Ethernet).
+Then all assigned IP addresses are listed. The host name of the
+device is shown in the title bar.</p>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_Settings_Eng"></a><b>Tab Settings</b></p>
+
+<ul>
+</ul>
+
+<p>On the sheet Settings, the <strong>configuration</strong> of
+WR-Tools ResInfo can be carried out.</p>
+
+<p>Among other things the following options can be chosen:</p>
+
+<ul>
+    <li><strong>Reset lifetimes automatically</strong><br>
+        If the <a href="ResInfo.htm#Page_Battery_Eng">battery
+        lifetimes</a> are cleared by a device, although the
+        device was not charged, automatic resetting can be
+        deactivated.</li>
+</ul>
+
+<ul>
+    <li><strong>Use static systray icons</strong><br>
+        The icons in the system tray are drawn accordingly of the
+        values provided by the system on a real-time basis.
+        However, the platform Pocket PC not always displays
+        dynamically generated icons correctly. Hence, with this
+        option can be toggled to a set of statically provided
+        icons.</li>
+</ul>
+
+<ul>
+    <li><strong>Alternative icon filling colors<br>
+        </strong>Should the colors of the <a
+        href="ResInfo.htm#Main_NotifyIcon_Eng">tray icons</a> are
+        badly to be made a distinction; an alternative color
+        combination can be selected.</li>
+</ul>
+
+<p>With the button <strong>Apply</strong>, the settings are taken
+over immediately. They are also taken over without inquiry if
+another sheet is selected or ResInfo is hidden with the button <strong>OK</strong>.<br>
+With the button <strong>Icon Colors</strong>, the drawing color
+of the tray icons can be selected. Should the icon text by use of
+<em>ClearType</em> display unsightly color spots, select black as
+drawing color.</p>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Main_NotifyIcon_Eng">Tray icons</a><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_About_Eng">Tab About</a><br clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_About_Eng"></a><b>Tab About</b></p>
+
+<ul>
+</ul>
+
+<p>WR-Tools ResInfo indicates on the sheet About <strong>information</strong>
+about the program WR-Tools ResInfo.</p>
+
+<ul>
+</ul>
+
+<p>The following information is indicated:</p>
+
+<ol>
+    <li><strong>Name of the application (WR-Tools ResInfo)</strong></li>
+    <li><strong>Version: &lt;major release&gt;.&lt;minor release&gt;.&lt;build
+        number&gt;</strong></li>
+    <li><strong>Binary file: ResInfo.&lt;machine&gt;.&lt;subsystem
+        version&gt;[.Dbg]</strong></li>
+    <li><strong>Legal notes</strong></li>
+    <li><strong>Contact information</strong></li>
+</ol>
+
+<ul>
+</ul>
+
+<p>With the button <strong>Website</strong>, you reach the
+product page of WR-Tools ResInfo in the Internet.</p>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Page_Battery_Eng">Tab Battery</a><br>
+<a href="ResInfo.htm#Page_Memory_Eng">Tab Memory</a><br>
+<a href="ResInfo.htm#Page_Storage_Eng">Tab Storage</a><br>
+<a href="ResInfo.htm#Page_Tasks_Eng">Tab Tasks</a><br>
+<a href="ResInfo.htm#Page_Processor_Eng">Tab Processor</a><br>
+<a href="ResInfo.htm#Page_System_Eng">Tab System</a><br>
+<a href="ResInfo.htm#Page_Settings_Eng">Tab Settings</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+
+<p><a name="Page_FAQ_Eng"></a><b>Frequently Asked Questions</b></p>
+
+<ul>
+</ul>
+
+<ol>
+    <li><strong>Why does WR-Tools ResInfo not appear in the list
+        under Settings » System » Memory » Running Programs?
+        Therefore, ResInfo cannot be terminated to uninstall it
+        or to carry out a backup (Pocket PC).<br>
+        </strong>So that ResInfo appears in this list, it must be
+        made visible by taping on one of its notification icons
+        in the menu bar. Alternatively, ResInfo can be closed
+        also with the command <em>Exit</em>. After pushing the
+        button OK, ResInfo is hidden and does not use the Smart
+        Minimize function. Thereby it is prevented, that ResInfo
+        will be automatically terminated and the battery
+        lifetimes can be determined correctly.</li>
+    <li><strong>Why does sometimes disappear one of the icons
+        from the notification area of the taskbar (Pocket PC)?<br>
+        </strong>On this occasion, it concerns around a specific
+        error of the platform Pocket PC. It appears if a
+        dynamically created icon is updated with the same handle.
+        By the actualization next in each case, the symbol is
+        indicated again correctly. Use static icons to avoid this
+        problem.</li>
+    <li><strong>The window of ResInfo contains a lot of free
+        space and redundant information. Why is the space not
+        used for farther useful information (Pocket PC)?<br>
+        </strong>The compact arrangement of the dialog elements
+        was selected, so that ResInfo is also usable on older
+        Palm-size PCs and Handheld PCs with only 240 screen
+        pixels in the width resp. height. The free spaces
+        originate from the fullscreen representation of the
+        Pocket PC. Through editing of the registration database
+        of Windows CE, ResInfo can be also executed on a Pocket
+        PC in the classical representation. For that purpose,
+        change with a registration editor the value of the entry <em>ClassicView</em>
+        in the registration key HKEY_CURRENT_USER\Software\WR-Tools\ResInfo
+        from 0 to 1. Then ResInfo must be restarted.</li>
+    <li><strong>Why is the resource information not indicated on
+        top in the navigation bar or in the today screen (Pocket
+        PC)?<br>
+        </strong>The classical representation of the status
+        symbols in the menu bar was selected, so that ResInfo is
+        runnable on possibly many Windows CE platforms (Palm-size
+        PC, Handheld PC, Tablet PC, Rugged PDA, GPS Handheld,
+        Thin Client, Set-top box, etc.).</li>
+    <li><strong>Is WR-Tools ResInfo also operational on a
+        SmartPhone (Windows Mobile Standard)?<br>
+        </strong>ResInfo uses a so-called Property Sheet as a
+        main window. This system-defined, tab control dialog box
+        is not supported by the special platform SmartPhone.</li>
+    <li><strong>ResInfo counts the battery run time. However,
+        indicating the rest run time would be much more practical.<br>
+        </strong>WR-Tools ResInfo can also be used on devices
+        which have a longer battery run time than Pocket PCs. In
+        that case counting down the run time would be very
+        inexact at the beginning. Besides, ResInfo is also
+        runnable on devices without batteries.</li>
+</ol>
+
+<ul>
+</ul>
+
+<p><b>See also</b><br>
+<a href="ResInfo.htm#Main_Contents_Eng">ResInfo help contents</a><br
+clear="all">
+</p>
+<!-- PegHelp -->
+<hr>
+</body>
+</html>

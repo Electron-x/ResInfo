@@ -1,0 +1,178 @@
+[Version]
+Signature   = "$Windows NT$"
+CESignature = "$Windows CE$"
+Provider    = "WR-Tools"
+
+[Strings]                  
+RegPath = Software\WR-Tools\ResInfo
+
+[CEStrings]
+AppName    = "ResInfo"
+InstallDir = %CE1%\WR-Tools
+
+[CEDevice.ARM.300]
+ProcessorType        = 2577
+UnsupportedPlatforms = "HPC","SmartPhone"
+VersionMin           = 3.00
+VersionMax           = 100.0
+BuildMax             = 0xE0000000
+
+[CEDevice.ARM.211]
+ProcessorType        = 2577
+UnsupportedPlatforms = "HPC","Palm PC"
+VersionMin           = 2.11
+VersionMax           = 2.99
+
+[CEDevice.ARM720.211]
+ProcessorType        = 1824
+UnsupportedPlatforms = "HPC","Palm PC"
+VersionMin           = 2.11
+VersionMax           = 100.0
+
+[CEDevice.SH3.300]
+ProcessorType        = 10003
+UnsupportedPlatforms = "HPC"
+VersionMin           = 3.00
+VersionMax           = 100.0
+
+[CEDevice.SH3.211]
+ProcessorType        = 10003
+UnsupportedPlatforms = "HPC"
+VersionMin           = 2.11
+VersionMax           = 2.99
+
+[CEDevice.SH3.200]
+ProcessorType        = 10003
+VersionMin           = 2.00
+VersionMax           = 2.10
+
+[CEDevice.SH4.211]
+ProcessorType        = 10005
+UnsupportedPlatforms = "HPC","Palm PC"
+VersionMin           = 2.11
+VersionMax           = 100.0
+
+[CEDevice.MIPS.300]
+ProcessorType        = 4000
+UnsupportedPlatforms = "HPC"
+VersionMin           = 3.00
+VersionMax           = 100.0
+
+[CEDevice.MIPS.211]
+ProcessorType        = 4000
+UnsupportedPlatforms = "HPC"
+VersionMin           = 2.11
+VersionMax           = 2.99
+
+[CEDevice.MIPS.200]
+ProcessorType        = 4000
+VersionMin           = 2.00
+VersionMax           = 2.10
+
+[CEDevice.486.300]
+ProcessorType        = 486
+UnsupportedPlatforms = "HPC","SmartPhone"
+VersionMin           = 3.00
+VersionMax           = 100.0
+
+[CEDevice.686.300]
+ProcessorType        = 686
+UnsupportedPlatforms = "HPC","SmartPhone"
+VersionMin           = 3.00
+VersionMax           = 100.0
+
+[SourceDisksNames]
+1 = ,"WCE (Common)",,
+
+[SourceDisksNames.ARM.300]
+2 = ,"WCE (ARM.300)",,ARM300Rel
+
+[SourceDisksNames.ARM.211]
+2 = ,"WCE (ARM.211)",,ARMRel
+
+[SourceDisksNames.ARM720.211]
+2 = ,"WCE (ARM720.211)",,ARMRel
+
+[SourceDisksNames.SH3.300]
+2 = ,"WCE (SH3.300)",,SH3_300Rel
+
+[SourceDisksNames.SH3.211]
+2 = ,"WCE (SH3.211)",,SH3Rel
+
+[SourceDisksNames.SH3.200]
+2 = ,"WCE (SH3.200)",,SH3_200Rel
+
+[SourceDisksNames.SH4.211]
+2 = ,"WCE (SH4.211)",,SH4Rel
+
+[SourceDisksNames.MIPS.300]
+2 = ,"WCE (MIPS.300)",,MIPS300Rel
+
+[SourceDisksNames.MIPS.211]
+2 = ,"WCE (MIPS.211)",,MIPSRel
+
+[SourceDisksNames.MIPS.200]
+2 = ,"WCE (MIPS.200)",,MIPS200Rel
+
+[SourceDisksNames.486.300]
+2 = ,"WCE (486.300)",,X86Rel
+
+[SourceDisksNames.686.300]
+2 = ,"WCE (686.300)",,X86Rel
+
+[SourceDisksFiles]
+ResInfo.htm = 1
+ResInfo.exe = 2
+
+[DefaultInstall]
+CopyFiles   = Application,Helpfile
+CEShortcuts = Shortcut.App,Shortcut.Run,Shortcut.Help
+AddReg      = RegSettings
+
+[DestinationDirs]
+DefaultDestDir = 0,%InstallDir%
+Application    = 0,%InstallDir%
+Helpfile       = 0,%CE2%
+Shortcut.App   = 0,%CE11%
+Shortcut.Run   = 0,%CE4%
+Shortcut.Help  = 0,\Windows\Help
+
+[Application]
+ResInfo.exe,,,0
+
+[Helpfile]
+ResInfo.htm,,,0
+
+[Shortcut.App]
+ResInfo,0,ResInfo.exe
+
+[Shortcut.Run]
+ResInfo,0,ResInfo.exe
+
+[Shortcut.Help]
+WR-Tools ResInfo,0,ResInfo.htm
+
+[RegSettings]
+HKCU,%RegPath%,UseDefault,0x00010001,1
+HKCU,%RegPath%,HideShellWnd,0x00010001,0
+HKCU,%RegPath%,ShowClassName,0x00010001,1
+HKCU,%RegPath%,ClassicView,0x00010001,0
+HKCU,%RegPath%,AdjustTemp,0x00010001,0
+HKCU,%RegPath%,ForceGerUI,0x00010001,0
+HKCU,%RegPath%,RunHidden,0x00010001,0
+HKCU,%RegPath%,Interval,0x00010001,1500
+HKCU,%RegPath%,CpuPause,0x00010001,0
+HKCU,%RegPath%,CpuDetails,0x00010001,0
+HKCU,%RegPath%,AutoReset,0x00010001,1
+HKCU,%RegPath%,NoCpuTrayIcon,0x00010001,1
+HKCU,%RegPath%,NoBatTrayIcon,0x00010001,0
+HKCU,%RegPath%,NoMemTrayIcon,0x00010001,0
+HKCU,%RegPath%,StaticIcons,0x00010001,0
+HKCU,%RegPath%,AltColor,0x00010001,0
+HKCU,%RegPath%,IconColor,0x00010001,0
+HKCU,%RegPath%,SysTimeLo,0x00010001,0
+HKCU,%RegPath%,SysTimeHi,0x00010001,0
+HKCU,%RegPath%,SuspendLo,0x00010001,0
+HKCU,%RegPath%,SuspendHi,0x00010001,0
+HKCU,%RegPath%,TickCount,0x00010001,0
+HKCU,%RegPath%,Operation,0x00010001,0
